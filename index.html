@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pharmacy Student Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <nav
+      class="bg-[#78B9B5] text-white px-6 py-4 shadow-md fixed w-full top-0 left-0 z-50"
+    >
+      <div class="flex justify-between items-center">
+        <div class="text-2xl font-bold">
+          <a href="#home">BRIJESH</a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-6 font-medium text-sm">
+          <li><a href="#home" class="hover:text-sky-100">Home</a></li>
+          <li><a href="#about" class="hover:text-sky-100">About</a></li>
+          <li><a href="#education" class="hover:text-sky-100">Education</a></li>
+          <li><a href="#gallery" class="hover:text-sky-100">Gallery</a></li>
+          <li><a href="#contact" class="hover:text-sky-100">Contact</a></li>
+        </ul>
+
+        <!-- Desktop Resume Button -->
+        <div class="hidden md:block">
+          <a
+            href="./assets/Resume.pdf"
+            target="_blank"
+            class="bg-white text-sky-600 font-semibold px-4 py-2 rounded shadow hover:bg-sky-100"
+          >
+            Download Resume
+          </a>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <button
+          id="hamburger"
+          class="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1"
+        >
+          <span class="w-6 h-0.5 bg-white"></span>
+          <span class="w-6 h-0.5 bg-white"></span>
+          <span class="w-6 h-0.5 bg-white"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="md:hidden mt-4 hidden">
+        <ul class="flex flex-col space-y-2 font-medium text-sm">
+          <li><a href="#home" class="hover:text-sky-100">Home</a></li>
+          <li><a href="#about" class="hover:text-sky-100">About</a></li>
+          <li><a href="#education" class="hover:text-sky-100">Education</a></li>
+          <li><a href="#gallery" class="hover:text-sky-100">Gallery</a></li>
+          <li><a href="#contact" class="hover:text-sky-100">Contact</a></li>
+        </ul>
+        <div class="mt-4">
+          <a
+            href="./assets/Resume.pdf"
+            target="_blank"
+            class="bg-white text-sky-600 font-semibold px-4 py-2 rounded shadow hover:bg-sky-100"
+          >
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section
+      id="home"
+      class="bg-[#ECFAE5] py-16 pt-40 pb-40 px-6 md:px-20 text-center md:text-left"
+    >
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 space-y-6">
+          <h1 class="text-4xl md:text-4xl font-bold text-sky-600">
+            Hi, I’m <span class="text-sky-800">Brijesh Kumar Yadav</span>
+          </h1>
+          <h2 class="text-xl md:text-2xl text-gray-700 font-medium">
+            Blending science with soul, one capsule at a time.
+          </h2>
+          <p class="text-gray-600">
+            Welcome to my portfolio! I am a passionate and dedicated pharmacy
+            student with a strong interest in healthcare, drug development, and
+            patient-centered care. I aim to contribute meaningfully to the
+            medical field through knowledge, research, and compassion. Explore
+            my academic journey, skills, and goals through this website.
+          </p>
+          <div>
+            <a
+              href="#contact"
+              class="inline-block bg-sky-600 text-white px-6 py-2 rounded shadow hover:bg-sky-700 transition"
+            >
+              Contact Me
+            </a>
+          </div>
+        </div>
+        <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+          <img
+            src="./assets/images/profile.jpg"
+            alt="Pharmacy Student"
+            class="w-64 h-64 rounded-full shadow-lg object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-[#FAF6E9] py-16 px-6 md:px-20">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-sky-700 mb-6">About Me</h2>
+        <p class="text-gray-700 leading-loose">
+          I am currently a third-year B.Pharm student at Goel Institute of
+          Pharmacy and Sciences, Lucknow. With a strong foundation in
+          pharmaceutical sciences, I am a highly motivated, skilled, dedicated,
+          and hardworking individual. I am passionate about understanding the
+          science behind healing and aspire to contribute meaningfully to the
+          healthcare industry. Whether it's mastering complex formulations,
+          staying updated with the latest drug research, or participating in
+          academic events, I approach every task with commitment and curiosity.
+          My goal is to blend technical knowledge with compassion to make a
+          real-world impact in the field of pharmacy.
+        </p>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="bg-[#DDF6D2] py-16 px-6 md:px-20">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-sky-700 text-center mb-10">
+          Education
+        </h2>
+        <div class="space-y-6">
+          <div class="bg-gray-100 p-6 rounded-lg shadow">
+            <h3 class="text-xl font-semibold text-sky-600">
+              Bachelor of Pharmacy
+            </h3>
+            <p class="text-sm text-gray-600">
+              Goel Institute of Pharmacy and Sciences,Lucknow — 2023–2027
+            </p>
+            <p class="mt-2 text-gray-700">
+              Key subjects: Pharmacology, Pharmaceutics, Medicinal Chemistry,
+              Clinical Pharmacy
+            </p>
+          </div>
+          <div class="bg-gray-100 p-6 rounded-lg shadow">
+            <h3 class="text-xl font-semibold text-sky-600">
+              Higher Secondary Education
+            </h3>
+            <p class="text-sm text-gray-600">
+              Mahatma Buddha Vidyapeeth Inter College,Bahraich — 2022
+            </p>
+            <p class="mt-2 text-gray-700">
+              Biology, Chemistry, Physics, English
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-12 bg-[#FEFFC4]">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-sky-700 mb-6">
+          Gallery
+        </h2>
+        <p class="text-center text-gray-600 mb-6 max-w-xl mx-auto">
+          A visual glimpse into my journey as a pharmacy student — from campus
+          life and lab experiments to events and moments that shaped my
+          experience.
+        </p>
+        <!-- Scrollable Image Container -->
+        <div
+          id="imageSlider"
+          class="flex overflow-x-auto scroll-smooth space-x-4 snap-x snap-mandatory"
+        >
+          <img
+            src="./assets/images/WhatsApp Image 2025-07-22 at 22.47.47_5bb0d902.jpg"
+            class="h-64 w-auto rounded-xl shadow-lg snap-start"
+            alt="Gallery Image 1"
+          />
+          <img
+            src="./assets/images/WhatsApp Image 2025-07-22 at 22.47.49_e55594a3.jpg"
+            class="h-64 w-auto rounded-xl shadow-lg snap-start"
+            alt="Gallery Image 2"
+          />
+          <img
+            src="./assets/images/WhatsApp Image 2025-07-22 at 22.47.49_f655c67c.jpg"
+            class="h-64 w-auto rounded-xl shadow-lg snap-start"
+            alt="Gallery Image 3"
+          />
+          <img
+            src="./assets/images/WhatsApp Image 2025-07-22 at 22.47.57_513bdc2c.jpg"
+            class="h-64 w-auto rounded-xl shadow-lg snap-start"
+            alt="Gallery Image 4"
+          />
+          <img
+            src="./assets/images/WhatsApp Image 2025-07-22 at 22.47.58_2c8d5c75.jpg"
+            class="h-64 w-auto rounded-xl shadow-lg snap-start"
+            alt="Gallery Image 5"
+          />
+          <img
+            src="./assets/images/WhatsApp Image 2025-07-22 at 22.47.58_66293299.jpg"
+            class="h-64 w-auto rounded-xl shadow-lg snap-start"
+            alt="Gallery Image 5"
+          />
+          <img
+            src="./assets/images/WhatsApp Image 2025-07-22 at 22.47.58_7b56095a.jpg"
+            class="h-64 w-auto rounded-xl shadow-lg snap-start"
+            alt="Gallery Image 5"
+          />
+          <img
+            src="./assets/images/WhatsApp Image 2025-07-22 at 22.47.59_1e7c0349.jpg"
+            class="h-64 w-auto rounded-xl shadow-lg snap-start"
+            alt="Gallery Image 5"
+          />
+          <img
+            src="./assets/images/WhatsApp Image 2025-07-22 at 22.47.59_ac0c21fe.jpg"
+            class="h-64 w-auto rounded-xl shadow-lg snap-start"
+            alt="Gallery Image 5"
+          />
+          <img
+            src="./assets/images/WhatsApp Image 2025-07-22 at 22.47.59_b88982cf.jpg"
+            class="h-64 w-auto rounded-xl shadow-lg snap-start"
+            alt="Gallery Image 5"
+          />
+          <img
+            src="./assets/images/WhatsApp Image 2025-07-22 at 22.48.00_0d3e0d67.jpg"
+            class="h-64 w-auto rounded-xl shadow-lg snap-start"
+            alt="Gallery Image 5"
+          />
+          <img
+            src="./assets/images/WhatsApp Image 2025-07-22 at 22.48.00_6da860a1.jpg"
+            class="h-64 w-auto rounded-xl shadow-lg snap-start"
+            alt="Gallery Image 5"
+          />
+          <img
+            src="./assets/images/WhatsApp Image 2025-07-22 at 22.48.01_24003d81.jpg"
+            class="h-64 w-auto rounded-xl shadow-lg snap-start"
+            alt="Gallery Image 5"
+          />
+          <img
+            src="./assets/images/WhatsApp Image 2025-07-22 at 22.48.01_58d63b03.jpg"
+            class="h-64 w-auto rounded-xl shadow-lg snap-start"
+            alt="Gallery Image 5"
+          />
+          <img
+            src="./assets/images/WhatsApp Image 2025-07-22 at 22.48.02_11d141e2.jpg"
+            class="h-64 w-auto rounded-xl shadow-lg snap-start"
+            alt="Gallery Image 5"
+          />
+          <!-- Add more images as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-white py-16 px-6 md:px-20">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold text-sky-700 text-center mb-10">
+          Contact Me
+        </h2>
+        <form class="space-y-6">
+          <div>
+            <label class="block mb-2 text-sm font-medium">Name</label>
+            <input
+              type="text"
+              class="w-full px-4 py-2 border border-gray-300 rounded"
+              placeholder="Your Name"
+            />
+          </div>
+          <div>
+            <label class="block mb-2 text-sm font-medium">Email</label>
+            <input
+              type="email"
+              class="w-full px-4 py-2 border border-gray-300 rounded"
+              placeholder="Your Email"
+            />
+          </div>
+          <div>
+            <label class="block mb-2 text-sm font-medium">Message</label>
+            <textarea
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="bg-sky-600 text-white px-6 py-2 rounded hover:bg-sky-700"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#2F5249] text-white py-6 mt-12">
+      <div class="container mx-auto text-center px-6">
+        <p class="text-sm">
+          © 2025 | Designed & Developed with
+          <span class="text-red-300">💖</span>
+          by
+          <span class="font-semibold">Awadhesh Kumar</span>
+          — passionate Computer Science Engineer, Web Developer, and Tech
+          Explorer.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      hamburger.addEventListener("click", function () {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
